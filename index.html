@@ -8,12 +8,10 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Al-Wafaa For Trading | Egyptian Cement Export
-    </title>
+    <title>Al-Wafaa For Trading | Egyptian Cement Export</title>
 
     <meta name="description"
-          content="Al-Wafaa For Trading connects international buyers with leading Egyptian cement manufacturers, providing reliable sourcing, competitive pricing, professional export management, and complete logistics support.">
+          content="Al-Wafaa For Trading connects international buyers with leading Egyptian cement manufacturers, providing reliable sourcing, competitive pricing, professional export management and complete logistics support.">
 
     <link rel="stylesheet" href="style.css">
 
@@ -22,32 +20,32 @@
 
 <body>
 
+
+<!-- =====================================================
+     HERO / MAIN PAGE
+     ===================================================== -->
+
+<section class="hero">
+
+
+    <!-- Background overlay -->
+
+    <div class="hero-overlay"></div>
+
+
+
     <!-- =================================================
-         FULL-SCREEN HOMEPAGE
+         HEADER
          ================================================= -->
 
-    <main class="hero">
+    <header class="header">
 
-
-        <!-- =================================================
-             HERO BACKGROUND OVERLAY
-             ================================================= -->
-
-        <div class="hero-overlay"></div>
-
-
-        <!-- =================================================
-             NAVIGATION
-             ================================================= -->
-
-        <nav class="navigation">
+        <div class="nav-container">
 
 
             <!-- LOGO -->
 
-            <a href="index.html"
-               class="logo"
-               aria-label="Al-Wafaa For Trading Home">
+            <a href="index.html" class="logo">
 
                 <img src="images/logo.png"
                      alt="Al-Wafaa For Trading Logo">
@@ -55,93 +53,225 @@
             </a>
 
 
-            <!-- NAVIGATION LINKS -->
 
-            <div class="nav-links">
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav class="navigation"
+                 id="mainNavigation">
 
                 <a href="index.html"
                    class="active">
+
                     Home
+
                 </a>
 
                 <a href="about.html">
+
                     About Us
+
                 </a>
 
                 <a href="products.html">
+
                     Products
+
                 </a>
 
                 <a href="services.html">
+
                     Export Services
+
                 </a>
 
                 <a href="contact.html">
+
                     Contact
+
                 </a>
 
-            </div>
-
-        </nav>
+            </nav>
 
 
-        <!-- =================================================
-             HERO CONTENT
-             ================================================= -->
 
-        <div class="hero-content">
+            <!-- MOBILE MENU BUTTON -->
 
-            <div class="hero-text">
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
 
+                <span></span>
+                <span></span>
+                <span></span>
 
-                <!-- SMALL LABEL -->
+            </button>
 
-                <div class="hero-label">
-                    EGYPTIAN CEMENT EXPORT
-                </div>
-
-
-                <!-- MAIN HEADING -->
-
-                <h1>
-
-                    Egyptian Cement Export
-
-                    <span>
-                        Solutions for Global Markets
-                    </span>
-
-                </h1>
-
-
-                <!-- COMPANY DESCRIPTION -->
-
-                <p>
-                    Al-Wafaa For Trading connects international
-                    buyers with leading Egyptian cement manufacturers,
-                    providing reliable sourcing, competitive pricing,
-                    professional export management, and complete
-                    logistics support.
-                </p>
-
-
-            </div>
 
         </div>
 
+    </header>
 
-        <!-- =================================================
-             COPYRIGHT
-             ================================================= -->
 
-        <div class="copyright">
 
-            © 2026 Al-Wafaa For Trading. All Rights Reserved.
+    <!-- =================================================
+         MOBILE MENU
+         ================================================= -->
+
+    <div class="mobile-menu"
+         id="mobileMenu">
+
+        <a href="index.html"
+           class="active">
+
+            Home
+
+        </a>
+
+        <a href="about.html">
+
+            About Us
+
+        </a>
+
+        <a href="products.html">
+
+            Products
+
+        </a>
+
+        <a href="services.html">
+
+            Export Services
+
+        </a>
+
+        <a href="contact.html">
+
+            Contact
+
+        </a>
+
+    </div>
+
+
+
+    <!-- =================================================
+         HERO CONTENT
+         ================================================= -->
+
+    <main class="hero-content">
+
+        <div class="hero-text">
+
+
+            <span class="hero-label">
+
+                EGYPTIAN CEMENT EXPORT
+
+            </span>
+
+
+
+            <h1>
+
+                Egyptian Cement Export
+
+                <span>
+
+                    Solutions for Global Markets
+
+                </span>
+
+            </h1>
+
+
+
+            <p>
+
+                Al-Wafaa For Trading connects international
+                buyers with leading Egyptian cement
+                manufacturers, providing reliable sourcing,
+                competitive pricing, professional export
+                management, and complete logistics support.
+
+            </p>
+
 
         </div>
-
 
     </main>
+
+
+
+    <!-- =================================================
+         COPYRIGHT
+         ================================================= -->
+
+    <div class="copyright">
+
+        © 2026 Al-Wafaa For Trading. All Rights Reserved.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     MOBILE MENU SCRIPT
+     ===================================================== -->
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuToggle.addEventListener("click", function () {
+
+    const isOpen =
+        mobileMenu.classList.toggle("open");
+
+    menuToggle.classList.toggle("open");
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+});
+
+
+
+/* Close menu after selecting a page */
+
+const mobileLinks =
+    mobileMenu.querySelectorAll("a");
+
+
+mobileLinks.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        mobileMenu.classList.remove("open");
+
+        menuToggle.classList.remove("open");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+});
+
+</script>
 
 
 </body>
