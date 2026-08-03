@@ -1,0 +1,695 @@
+/* =========================================================
+   AL-WAFAA FOR TRADING
+   RESPONSIVE / MOBILE STYLES
+   ========================================================= */
+
+
+/* =========================================================
+   LARGE TABLETS / SMALL LAPTOPS
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .desktop-navigation {
+        gap: 0;
+    }
+
+    .desktop-navigation > a {
+        padding-left: 9px;
+        padding-right: 9px;
+        font-size: 0.84rem;
+    }
+
+    .desktop-navigation > a::after {
+        left: 9px;
+        right: 9px;
+    }
+
+    .desktop-navigation .nav-quote {
+        margin-left: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .intro-grid {
+        gap: 55px;
+    }
+
+    .global-supply-content {
+        gap: 45px;
+    }
+
+    .supply-flow {
+        gap: 7px;
+    }
+
+    .supply-step {
+        min-width: 105px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLETS
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* HEADER */
+
+    .header-container {
+        min-height: 78px;
+    }
+
+    .site-logo img {
+        width: 155px;
+    }
+
+    .desktop-navigation {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-navigation {
+        display: none;
+
+        width: 100%;
+
+        padding:
+            10px 20px 20px;
+
+        background: var(--navy-dark);
+
+        border-top:
+            1px solid
+            rgba(
+                255,
+                255,
+                255,
+                0.08
+            );
+    }
+
+    .mobile-navigation.is-open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-navigation > a {
+        display: flex;
+        align-items: center;
+
+        min-height: 48px;
+
+        padding:
+            0 10px;
+
+        color:
+            rgba(
+                255,
+                255,
+                255,
+                0.9
+            );
+
+        border-bottom:
+            1px solid
+            rgba(
+                255,
+                255,
+                255,
+                0.07
+            );
+
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .mobile-navigation > a.active {
+        color: var(--gold-light);
+    }
+
+    .mobile-navigation .mobile-quote {
+        justify-content: center;
+
+        margin-top: 12px;
+
+        background: var(--gold);
+
+        border: none;
+
+        border-radius:
+            var(--radius-small);
+
+        color: var(--navy);
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        padding:
+            80px 0;
+    }
+
+
+    /* COMPANY */
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .intro-heading h2 {
+        max-width: 700px;
+    }
+
+
+    /* PRODUCTS */
+
+    .product-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* WHY */
+
+    .benefits-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    /* GLOBAL SUPPLY */
+
+    .global-supply-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .global-supply-text h2 {
+        max-width: 650px;
+    }
+
+    .supply-flow {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE DEVICES
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* GLOBAL */
+
+    .content-container,
+    .header-container,
+    .footer-container {
+        width:
+            min(
+                calc(100% - 30px),
+                var(--container)
+            );
+    }
+
+
+    /* HEADER */
+
+    .header-container {
+        min-height: 70px;
+        gap: 12px;
+    }
+
+    .site-logo img {
+        width: 138px;
+    }
+
+    .mobile-menu-button {
+        width: 44px;
+        height: 44px;
+        padding: 9px;
+        flex-shrink: 0;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 610px;
+
+        background-position:
+            58% center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(
+                    7,
+                    21,
+                    37,
+                    0.96
+                ) 0%,
+                rgba(
+                    7,
+                    21,
+                    37,
+                    0.83
+                ) 70%,
+                rgba(
+                    7,
+                    21,
+                    37,
+                    0.60
+                ) 100%
+            );
+    }
+
+    .hero-container {
+        width:
+            min(
+                calc(100% - 30px),
+                var(--container)
+            );
+    }
+
+    .hero-content {
+        padding:
+            65px 0;
+    }
+
+    .hero-eyebrow {
+        margin-bottom: 14px;
+        font-size: 0.68rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 20px;
+
+        font-size:
+            clamp(
+                2.15rem,
+                10vw,
+                3.2rem
+            );
+
+        line-height: 1.08;
+    }
+
+    .hero-text {
+        margin-bottom: 27px;
+        font-size: 0.94rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+
+    /* BUTTONS */
+
+    .button {
+        min-height: 50px;
+        padding:
+            0 18px;
+
+        font-size: 0.78rem;
+    }
+
+
+    /* SECTION SPACING */
+
+    .company-introduction,
+    .products-preview,
+    .services-preview,
+    .why-us-section,
+    .global-supply-section {
+        padding:
+            75px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 38px;
+    }
+
+    .section-heading h2 {
+        font-size:
+            clamp(
+                1.85rem,
+                8vw,
+                2.5rem
+            );
+    }
+
+    .section-label {
+        font-size: 0.68rem;
+        letter-spacing: 1.7px;
+    }
+
+
+    /* COMPANY */
+
+    .intro-heading h2 {
+        font-size:
+            clamp(
+                1.9rem,
+                8vw,
+                2.5rem
+            );
+    }
+
+    .intro-text p {
+        font-size: 0.95rem;
+    }
+
+
+    /* PRODUCTS */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .product-card-content {
+        padding:
+            19px 20px 21px;
+    }
+
+    .product-card-content h3 {
+        min-height: auto;
+        font-size: 1.1rem;
+    }
+
+
+    /* SERVICES */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 24px;
+    }
+
+    .service-card h3 {
+        font-size: 1.15rem;
+    }
+
+
+    /* WHY */
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .benefit-card {
+        padding: 24px;
+    }
+
+
+    /* GLOBAL SUPPLY */
+
+    .global-supply-content {
+        gap: 35px;
+    }
+
+    .global-supply-text h2 {
+        font-size:
+            clamp(
+                1.9rem,
+                8vw,
+                2.5rem
+            );
+    }
+
+    .supply-flow {
+        display: grid;
+
+        grid-template-columns:
+            1fr;
+
+        gap: 10px;
+    }
+
+    .supply-step {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .supply-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transform:
+            rotate(90deg);
+    }
+
+
+    /* FINAL CTA */
+
+    .final-cta {
+        padding:
+            75px 0;
+    }
+
+    .final-cta-content h2 {
+        font-size:
+            clamp(
+                2rem,
+                9vw,
+                2.8rem
+            );
+    }
+
+    .final-cta-content p {
+        font-size: 0.94rem;
+    }
+
+    .final-cta-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .final-cta-actions .button {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        padding:
+            55px 0 40px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-column {
+        align-items: flex-start;
+    }
+
+    .footer-bottom p {
+        width:
+            calc(100% - 30px);
+
+        padding:
+            17px 0;
+
+        font-size: 0.72rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL ANDROID PHONES
+   320px - 380px
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .content-container,
+    .header-container,
+    .footer-container,
+    .hero-container {
+        width:
+            calc(100% - 24px);
+    }
+
+
+    .header-container {
+        min-height: 66px;
+    }
+
+    .site-logo img {
+        width: 124px;
+    }
+
+    .mobile-menu-button {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .hero-section {
+        min-height: 590px;
+    }
+
+    .hero-content {
+        padding:
+            55px 0;
+    }
+
+    .hero-content h1 {
+        font-size:
+            2rem;
+    }
+
+    .hero-text {
+        font-size:
+            0.9rem;
+    }
+
+
+    .section-heading h2,
+    .intro-heading h2,
+    .global-supply-text h2 {
+        font-size:
+            1.85rem;
+    }
+
+
+    .product-image {
+        height: 200px;
+    }
+
+
+    .service-card,
+    .benefit-card {
+        padding: 21px;
+    }
+
+}
+
+
+/* =========================================================
+   LANDSCAPE MOBILE
+   ========================================================= */
+
+@media (
+    max-width: 900px
+) and (
+    orientation: landscape
+) {
+
+    .hero-section {
+        min-height: 520px;
+    }
+
+    .hero-content {
+        padding:
+            50px 0;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (
+    hover: none
+) and (
+    pointer: coarse
+) {
+
+    .product-card:hover,
+    .service-card:hover,
+    .benefit-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover .product-image img {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (
+    prefers-reduced-motion: reduce
+) {
+
+    .mobile-menu-button span,
+    .product-image img,
+    .product-card,
+    .service-card,
+    .benefit-card,
+    .button,
+    .text-link span {
+        transition: none !important;
+    }
+
+}

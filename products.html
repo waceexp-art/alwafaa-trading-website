@@ -5,15 +5,79 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Products | Al-Wafaa For Trading</title>
+    <title>
+        Products | Al-Wafaa For Trading
+    </title>
 
-    <meta name="description"
-          content="Egyptian cement and clinker products supplied by Al-Wafaa For Trading through established relationships with Egyptian cement manufacturers.">
+    <meta
+        name="description"
+        content="Explore cement and clinker products supplied by Al-Wafaa For Trading from established Egyptian manufacturers to international markets."
+    >
 
-    <link rel="stylesheet" href="products.css">
+    <meta name="author" content="Al-Wafaa For Trading">
+
+    <meta name="theme-color" content="#071525">
+
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/pages.css"
+    >
+
+
+    <!-- Google Analytics -->
+
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-97PBZYNLEC">
+    </script>
+
+    <script>
+
+        window.dataLayer =
+            window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag(
+            'js',
+            new Date()
+        );
+
+        gtag(
+            'config',
+            'G-97PBZYNLEC'
+        );
+
+    </script>
 
 </head>
 
@@ -21,354 +85,664 @@
 <body>
 
 
-<!-- =====================================================
-     NAVIGATION
-     ===================================================== -->
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-<nav class="navigation">
+<header class="site-header">
 
-    <a href="index.html" class="logo">
-
-        <img src="images/logo.png"
-             alt="Al-Wafaa For Trading Logo">
-
-    </a>
+    <div class="header-container">
 
 
-    <div class="nav-links">
+        <!-- LOGO -->
 
-        <a href="index.html">Home</a>
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="Al-Wafaa For Trading Home"
+        >
 
-        <a href="about.html">About Us</a>
+            <img
+                src="images/logo.png"
+                alt="Al-Wafaa For Trading"
+            >
 
-        <a href="products.html" class="active">Products</a>
+        </a>
 
-        <a href="services.html">Export Services</a>
 
-        <a href="contact.html">Contact</a>
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="desktop-navigation"
+            aria-label="Main navigation"
+        >
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a
+                href="products.html"
+                class="active"
+            >
+                Products
+            </a>
+
+            <a href="services.html">
+                Export Services
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a
+                href="rfq.html"
+                class="nav-quote"
+            >
+                Request a Quote
+            </a>
+
+        </nav>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileNavigation"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
 
     </div>
 
-</nav>
+
+    <!-- MOBILE NAVIGATION -->
+
+    <nav
+        class="mobile-navigation"
+        id="mobileNavigation"
+        aria-label="Mobile navigation"
+    >
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About Us
+        </a>
+
+        <a
+            href="products.html"
+            class="active"
+        >
+            Products
+        </a>
+
+        <a href="services.html">
+            Export Services
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a
+            href="rfq.html"
+            class="mobile-quote"
+        >
+            Request a Quote
+        </a>
+
+    </nav>
+
+</header>
 
 
 
-<!-- =====================================================
-     HERO
-     ===================================================== -->
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
 
-<section class="products-hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <span class="hero-label">
-            OUR PRODUCTS
-        </span>
-
-        <h1>
-            Egyptian Cement
-            <span>&amp; Clinker</span>
-        </h1>
-
-        <p>
-            Quality products for international markets
-        </p>
-
-    </div>
-
-</section>
+<main>
 
 
+    <!-- =====================================================
+         PAGE HERO
+         ===================================================== -->
 
-<!-- =====================================================
-     PRODUCT RANGE INTRODUCTION
-     ===================================================== -->
+    <section class="page-hero">
 
-<section class="products-intro">
+        <div class="page-hero-container">
 
-    <div class="container products-intro-grid">
+            <div class="page-hero-content">
 
 
-        <div class="intro-title">
+                <div class="breadcrumb">
 
-            <span>
-                PRODUCT RANGE
-            </span>
+                    <a href="index.html">
+                        Home
+                    </a>
 
-            <h2>
-                Egyptian Cement
-                <br>
-                &amp; Clinker
-            </h2>
+                    <span class="breadcrumb-separator">
+                        /
+                    </span>
 
-            <div class="title-line"></div>
+                    <span class="breadcrumb-current">
+                        Products
+                    </span>
+
+                </div>
+
+
+                <span class="page-hero-label">
+                    CEMENT & CLINKER
+                </span>
+
+
+                <h1>
+                    Products
+                </h1>
+
+
+                <p>
+                    Egyptian cement and clinker
+                    supply for international buyers
+                    and construction markets.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUCTS
+         ===================================================== -->
+
+    <section class="products-section">
+
+        <div class="content-container">
+
+
+            <div class="products-introduction">
+
+                <p>
+
+                    Al-Wafaa For Trading supports
+                    international buyers with access
+                    to a range of cement and clinker
+                    products supplied through established
+                    Egyptian manufacturers.
+
+                </p>
+
+            </div>
+
+
+            <div class="products-page-grid">
+
+
+                <!-- =================================================
+                     PORTLAND CEMENT
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/opc.jpg"
+                            alt="Portland Cement"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            Portland Cement
+                        </h2>
+
+                        <p>
+                            Portland cement suitable for
+                            general construction applications
+                            and a wide range of building projects.
+                        </p>
+
+                        <a
+                            href="products/opc.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     SULFATE RESISTANT CEMENT
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/src.jpg"
+                            alt="Sulfate Resistant Cement"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            Sulfate Resistant Cement
+                        </h2>
+
+                        <p>
+                            Cement designed for applications
+                            where resistance to sulfate exposure
+                            is an important performance requirement.
+                        </p>
+
+                        <a
+                            href="products/src.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PORTLAND POZZOLANA CEMENT
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/ppc.jpg"
+                            alt="Portland Pozzolana Cement"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            Portland Pozzolana Cement
+                        </h2>
+
+                        <p>
+                            Cement suitable for construction
+                            applications where durability and
+                            reliable long-term performance are required.
+                        </p>
+
+                        <a
+                            href="products/ppc.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     PORTLAND LIMESTONE CEMENT
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/plc.jpg"
+                            alt="Portland Limestone Cement"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            Portland Limestone Cement
+                        </h2>
+
+                        <p>
+                            Cement solution for construction
+                            applications requiring dependable
+                            quality and efficient supply.
+                        </p>
+
+                        <a
+                            href="products/plc.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     WHITE CEMENT
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/white-cement.jpg"
+                            alt="White Cement"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            White Cement
+                        </h2>
+
+                        <p>
+                            High-quality white cement for
+                            specialized construction,
+                            architectural, and finishing applications.
+                        </p>
+
+                        <a
+                            href="products/white-cement.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     CEMENT CLINKER
+                     ================================================= -->
+
+                <article class="product-detail-card">
+
+
+                    <div class="product-detail-image">
+
+                        <img
+                            src="images/clinker.jpg"
+                            alt="Cement Clinker"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-detail-content">
+
+                        <h2>
+                            Cement Clinker
+                        </h2>
+
+                        <p>
+                            Egyptian cement clinker supplied
+                            for cement manufacturers and
+                            international industrial buyers.
+                        </p>
+
+                        <a
+                            href="products/clinker.pdf"
+                            class="product-document"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Product Document
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRODUCT REQUIREMENTS CTA
+         ===================================================== -->
+
+    <section class="page-cta">
+
+        <div class="content-container">
+
+            <div class="page-cta-content">
+
+                <span class="section-label">
+                    INTERNATIONAL CEMENT SUPPLY
+                </span>
+
+
+                <h2>
+                    Have a Specific Product
+                    Requirement?
+                </h2>
+
+
+                <p>
+                    Tell us the cement type,
+                    quantity, destination, packaging,
+                    and delivery requirements.
+                    We will coordinate the appropriate
+                    supply solution.
+                </p>
+
+
+                <a
+                    href="rfq.html"
+                    class="button button-primary"
+                >
+                    Request a Quote
+                </a>
+
+
+                <a
+                    href="contact.html"
+                    class="button button-outline"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="Al-Wafaa For Trading"
+                >
+
+            </a>
+
+            <p>
+
+                Egyptian international trading
+                company specializing in cement
+                and clinker export to global markets.
+
+            </p>
 
         </div>
 
 
-        <div class="intro-text">
+        <!-- COMPANY -->
 
-            <p>
-                Al-Wafaa For Trading provides international
-                buyers with access to Egyptian cement and clinker
-                through established relationships with leading
-                Egyptian cement manufacturers.
-            </p>
+        <div class="footer-column">
 
-            <p>
-                Our manufacturing network includes
-                <strong>Wadi El Nile Cement</strong>,
-                <strong>Sinai Cement</strong>,
-                <strong>National Cement</strong>,
-                <strong>El Arish Cement</strong>,
-                <strong>Assiut Cement</strong>,
-                <strong>Lafarge Egypt</strong>,
-                <strong>South Valley Cement</strong>,
-                and <strong>Amreyah Cement</strong>.
-            </p>
+            <h3>
+                Company
+            </h3>
 
-            <p>
-                Through these relationships, we support
-                international buyers with reliable access to
-                Egyptian cement and clinker, competitive sourcing,
-                and professional export coordination according
-                to their requirements.
-            </p>
+            <a href="about.html">
+                About Us
+            </a>
 
-        </div>
+            <a href="products.html">
+                Products
+            </a>
 
-    </div>
+            <a href="services.html">
+                Export Services
+            </a>
 
-</section>
-
-
-
-<!-- =====================================================
-     PRODUCT SELECTION
-     ===================================================== -->
-
-<section class="product-gallery">
-
-    <div class="container">
-
-        <div class="gallery-heading">
-
-            <span>
-                PRODUCT SELECTION
-            </span>
-
-            <p>
-                Select a product to view the product document.
-            </p>
+            <a href="contact.html">
+                Contact
+            </a>
 
         </div>
 
 
-        <div class="gallery-grid">
+        <!-- PRODUCTS -->
 
+        <div class="footer-column">
 
-            <!-- PRODUCT 1 -->
+            <h3>
+                Products
+            </h3>
 
-            <div class="product-item">
+            <a href="products.html">
+                Portland Cement
+            </a>
 
-                <div class="product-card"
-                     onclick="openLightbox(0)">
+            <a href="products.html">
+                Sulfate Resistant Cement
+            </a>
 
-                    <img src="images/products/product1.jpg"
-                         alt="Portland Cement">
+            <a href="products.html">
+                Portland Pozzolana Cement
+            </a>
 
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Portland Cement
-                </h3>
-
-            </div>
-
-
-
-            <!-- PRODUCT 2 -->
-
-            <div class="product-item">
-
-                <div class="product-card"
-                     onclick="openLightbox(1)">
-
-                    <img src="images/products/product2.jpg"
-                         alt="Sulphate Resistant Cement">
-
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Sulphate Resistant Cement
-                </h3>
-
-            </div>
-
-
-
-            <!-- PRODUCT 3 -->
-
-            <div class="product-item">
-
-                <div class="product-card"
-                     onclick="openLightbox(2)">
-
-                    <img src="images/products/product3.jpg"
-                         alt="Pozzolana Cement">
-
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Pozzolana Cement
-                </h3>
-
-            </div>
-
-
-
-            <!-- PRODUCT 4 -->
-
-            <div class="product-item">
-
-                <div class="product-card"
-                     onclick="openLightbox(3)">
-
-                    <img src="images/products/product4.jpg"
-                         alt="Limestone Cement">
-
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Limestone Cement
-                </h3>
-
-            </div>
-
-
-
-            <!-- PRODUCT 5 -->
-
-            <div class="product-item">
-
-                <div class="product-card"
-                     onclick="openLightbox(4)">
-
-                    <img src="images/products/product5.jpg"
-                         alt="White Cement">
-
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    White Cement
-                </h3>
-
-            </div>
-
-
-
-            <!-- PRODUCT 6 -->
-
-            <div class="product-item">
-
-                <div class="product-card"
-                     onclick="openLightbox(5)">
-
-                    <img src="images/products/product6.jpg"
-                         alt="Cement Clinker">
-
-                    <div class="product-overlay">
-                        <span>VIEW</span>
-                    </div>
-
-                </div>
-
-                <h3>
-                    Cement Clinker
-                </h3>
-
-            </div>
-
+            <a href="products.html">
+                Cement Clinker
+            </a>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- CONTACT -->
 
+        <div class="footer-column">
 
+            <h3>
+                Contact
+            </h3>
 
-<!-- =====================================================
-     LIGHTBOX
-     ===================================================== -->
+            <a href="mailto:info@alwafaa-trading.com">
+                info@alwafaa-trading.com
+            </a>
 
-<div class="lightbox"
-     id="lightbox"
-     onclick="closeOutside(event)">
+            <a href="tel:+201095023434">
+                +20 109 502 3434
+            </a>
 
-
-    <button class="close-button"
-            onclick="closeLightbox()"
-            aria-label="Close">
-
-        &times;
-
-    </button>
-
-
-    <button class="lightbox-arrow arrow-left"
-            onclick="previousProduct(event)"
-            aria-label="Previous product">
-
-        &#10094;
-
-    </button>
-
-
-    <div class="lightbox-content">
-
-        <img id="lightbox-image"
-             src=""
-             alt="Selected product">
-
-
-        <div class="lightbox-info">
-
-            <h2 id="lightbox-title">
-                Product
-            </h2>
-
-            <a id="pdf-download"
-               class="pdf-button"
-               href="#"
-               download>
-
-                <span class="pdf-icon">↓</span>
-
-                Download Product PDF
-
+            <a
+                href="https://wa.me/201095023434"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                WhatsApp
             </a>
 
         </div>
@@ -376,246 +750,32 @@
     </div>
 
 
-    <button class="lightbox-arrow arrow-right"
-            onclick="nextProduct(event)"
-            aria-label="Next product">
+    <div class="footer-bottom">
 
-        &#10095;
+        <p>
 
-    </button>
+            ©
+            <span class="current-year">
+                2026
+            </span>
+            Al-Wafaa For Trading.
+            All Rights Reserved.
 
+        </p>
 
-</div>
-
-
-
-<!-- =====================================================
-     FOOTER
-     ===================================================== -->
-
-<footer class="footer">
-
-    © 2026 Al-Wafaa For Trading. All Rights Reserved.
+    </div>
 
 </footer>
 
 
 
-<!-- =====================================================
+<!-- =========================================================
      JAVASCRIPT
-     ===================================================== -->
+     ========================================================= -->
 
-<script>
+<script src="js/main.js"></script>
 
-const products = [
-
-    {
-        name: "Portland Cement",
-        image: "images/products/product1.jpg",
-        pdf: "pdf/portland-cement.pdf"
-    },
-
-    {
-        name: "Sulphate Resistant Cement",
-        image: "images/products/product2.jpg",
-        pdf: "pdf/sulphate-resistant-cement.pdf"
-    },
-
-    {
-        name: "Pozzolana Cement",
-        image: "images/products/product3.jpg",
-        pdf: "pdf/pozzolana-cement.pdf"
-    },
-
-    {
-        name: "Limestone Cement",
-        image: "images/products/product4.jpg",
-        pdf: "pdf/limestone-cement.pdf"
-    },
-
-    {
-        name: "White Cement",
-        image: "images/products/product5.jpg",
-        pdf: "pdf/white-cement.pdf"
-    },
-
-    {
-        name: "Cement Clinker",
-        image: "images/products/product6.jpg",
-        pdf: "pdf/cement-clinker.pdf"
-    }
-
-];
-
-
-let currentProduct = 0;
-
-
-
-/* =====================================================
-   OPEN PRODUCT
-   ===================================================== */
-
-function openLightbox(index) {
-
-    currentProduct = index;
-
-    updateProduct();
-
-    document
-        .getElementById("lightbox")
-        .classList.add("show");
-
-    document.body.classList.add("no-scroll");
-
-}
-
-
-
-/* =====================================================
-   UPDATE PRODUCT
-   ===================================================== */
-
-function updateProduct() {
-
-    const product = products[currentProduct];
-
-    document
-        .getElementById("lightbox-image")
-        .src = product.image;
-
-    document
-        .getElementById("lightbox-image")
-        .alt = product.name;
-
-    document
-        .getElementById("lightbox-title")
-        .textContent = product.name;
-
-    document
-        .getElementById("pdf-download")
-        .href = product.pdf;
-
-}
-
-
-
-/* =====================================================
-   CLOSE
-   ===================================================== */
-
-function closeLightbox() {
-
-    document
-        .getElementById("lightbox")
-        .classList.remove("show");
-
-    document.body.classList.remove("no-scroll");
-
-}
-
-
-
-/* =====================================================
-   CLOSE OUTSIDE
-   ===================================================== */
-
-function closeOutside(event) {
-
-    if (event.target.id === "lightbox") {
-
-        closeLightbox();
-
-    }
-
-}
-
-
-
-/* =====================================================
-   NEXT
-   ===================================================== */
-
-function nextProduct(event) {
-
-    event.stopPropagation();
-
-    currentProduct++;
-
-    if (currentProduct >= products.length) {
-
-        currentProduct = 0;
-
-    }
-
-    updateProduct();
-
-}
-
-
-
-/* =====================================================
-   PREVIOUS
-   ===================================================== */
-
-function previousProduct(event) {
-
-    event.stopPropagation();
-
-    currentProduct--;
-
-    if (currentProduct < 0) {
-
-        currentProduct = products.length - 1;
-
-    }
-
-    updateProduct();
-
-}
-
-
-
-/* =====================================================
-   KEYBOARD
-   ===================================================== */
-
-document.addEventListener("keydown", function(event) {
-
-    const lightbox =
-        document.getElementById("lightbox");
-
-
-    if (!lightbox.classList.contains("show")) {
-
-        return;
-
-    }
-
-
-    if (event.key === "Escape") {
-
-        closeLightbox();
-
-    }
-
-
-    if (event.key === "ArrowRight") {
-
-        nextProduct(event);
-
-    }
-
-
-    if (event.key === "ArrowLeft") {
-
-        previousProduct(event);
-
-    }
-
-});
-
-</script>
+<script src="js/menu.js"></script>
 
 
 </body>
